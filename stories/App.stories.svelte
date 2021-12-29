@@ -9,4 +9,10 @@
   <App {...args}/>
 </Template>
 
-<Story name="Default"/>
+<Story
+  name="Default"
+  args={{
+    title: 'Vite + Svelte + Storybook',
+    read: 'Hello world!',
+  }}
+/>
