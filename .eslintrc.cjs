@@ -18,6 +18,12 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['**/vite.config.js'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+    {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
     },
