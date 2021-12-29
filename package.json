@@ -12,6 +12,7 @@
     "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.svelte",
     "lint:stylelint": "stylelint --ignore-path .gitignore ./**/*.{css,svelte}",
     "fix:stylelint": "stylelint --fix --ignore-path .gitignore ./**/*.{css,svelte}",
+    "stylelint-check": "stylelint-config-prettier-check",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -33,11 +34,11 @@
     "prettier-plugin-svelte": "^2.5.1",
     "stylelint": "^14.2.0",
     "stylelint-config-html": "^1.0.0",
+    "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^24.0.0",
     "svelte": "^3.44.3",
     "svelte-loader": "^3.1.2",
     "vite": "^2.7.2"
-  },
-  "dependencies": {}
+  }
 }
