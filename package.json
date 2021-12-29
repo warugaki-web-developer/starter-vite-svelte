@@ -7,10 +7,16 @@
     "build": "vite build",
     "preview": "vite preview",
     "format:check": "prettier --check --ignore-path .gitignore --plugin-search-dir=. ./**/*.svelte",
-    "format:fix": "prettier --write --ignore-path .gitignore --plugin-search-dir=. ./**/*.svelte"
+    "format:fix": "prettier --write --ignore-path .gitignore --plugin-search-dir=. ./**/*.svelte",
+    "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.svelte",
+    "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.svelte"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-svelte3": "^3.2.1",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.1",
     "svelte": "^3.44.0",
