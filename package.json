@@ -7,7 +7,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "format:check": "prettier --check --ignore-path .gitignore --plugin-search-dir=. ./**/*.svelte",
-    "format:fix": "prettier --write --ignore-path .gitignore --plugin-search-dir=. ./**/*.svelte"
+    "format:fix": "prettier --write --ignore-path .gitignore --plugin-search-dir=. ./**/*.svelte",
+    "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.svelte",
+    "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.svelte"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
