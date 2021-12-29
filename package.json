@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format:check": "prettier --check --ignore-path .gitignore --plugin-search-dir=. ./**/*.svelte",
+    "format:fix": "prettier --write --ignore-path .gitignore --plugin-search-dir=. ./**/*.svelte"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
