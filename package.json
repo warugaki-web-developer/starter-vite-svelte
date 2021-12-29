@@ -11,10 +11,19 @@
     "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.svelte",
     "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.svelte",
     "lint:stylelint": "stylelint --ignore-path .gitignore ./**/*.{css,svelte}",
-    "fix:stylelint": "stylelint --fix --ignore-path .gitignore ./**/*.{css,svelte}"
+    "fix:stylelint": "stylelint --fix --ignore-path .gitignore ./**/*.{css,svelte}",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/addon-svelte-csf": "^1.1.0",
+    "@storybook/svelte": "^6.4.9",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "babel-loader": "^8.2.3",
     "eslint": "^8.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3",
@@ -26,7 +35,9 @@
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^24.0.0",
-    "svelte": "^3.44.0",
+    "svelte": "^3.44.3",
+    "svelte-loader": "^3.1.2",
     "vite": "^2.7.2"
-  }
+  },
+  "dependencies": {}
 }
