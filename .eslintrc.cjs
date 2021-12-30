@@ -17,6 +17,7 @@ module.exports = {
         devDependencies: true, // devDependenciesのimportを許可
       },
     ],
+    'import/no-mutable-exports': 'off',
   },
   overrides: [
     {
@@ -28,10 +29,6 @@ module.exports = {
     {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
-      rules: {
-        'import/no-mutable-exports': 'off',
-        'import/prefer-default-export': 'off',
-      },
     },
   ],
 };
