@@ -4,19 +4,13 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    'airbnb-base',
-    'prettier',
-  ],
+  extends: ['airbnb-base', 'prettier'],
   parserOptions: {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: [
-    'svelte3',
-  ],
-  rules: {
-  },
+  plugins: ['svelte3'],
+  rules: {},
   overrides: [
     {
       files: ['**/vite.config.js'],

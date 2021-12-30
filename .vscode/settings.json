@@ -7,14 +7,8 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
-  "eslint.validate": [
-    "svelte"
-  ],
+  "eslint.validate": ["svelte"],
   "css.validate": false,
   "scss.validate": false,
-  "stylelint.validate": [
-    "css",
-    "postcss",
-    "svelte"
-  ],
+  "stylelint.validate": ["css", "postcss", "svelte"]
 }
