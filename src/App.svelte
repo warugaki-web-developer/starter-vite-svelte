@@ -1,11 +1,16 @@
 <script>
   import logo from './assets/svelte.png';
   import Counter from './lib/Counter.svelte';
+
+  export let title =
+    'Vite + Svelte + Eslint(airbnb) + Prettier + Stylelint + Storybook';
+  export let read = 'Hello world!';
 </script>
 
 <main>
   <img src={logo} alt="Svelte Logo" />
-  <h1>Hello world!</h1>
+  <h1>{title}</h1>
+  <p>{read}</p>
 
   <Counter />
 
@@ -21,18 +26,11 @@
 </main>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
   :root {
-    font-family:
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   main {
@@ -52,8 +50,7 @@
     font-size: 4rem;
     font-weight: 100;
     line-height: 1.1;
-    color: #ff3e00;
-    text-transform: uppercase;
+    color: #696969;
   }
 
   p {
