@@ -3,10 +3,10 @@
   import App from '../src/App.svelte';
 </script>
 
-<Meta title="App" component={App}/>
+<Meta title="App" component={App} />
 
 <Template let:args>
-  <App {...args}/>
+  <App {...args} />
 </Template>
 
 <Story
