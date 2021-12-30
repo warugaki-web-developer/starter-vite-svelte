@@ -10,7 +10,14 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['svelte3'],
-  rules: {},
+  rules: {
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true, // devDependenciesのimportを許可
+      },
+    ],
+  },
   overrides: [
     {
       files: ['**/vite.config.js'],
@@ -22,7 +29,6 @@ module.exports = {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
       rules: {
-        'import/no-extraneous-dependencies': 'off',
         'import/no-mutable-exports': 'off',
         'import/prefer-default-export': 'off',
       },
